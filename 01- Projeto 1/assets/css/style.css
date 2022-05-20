@@ -1,0 +1,197 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@font-face {
+  font-family: 'Saiyan-Sans';
+  src: url('../fonts/Saiyan-Sans.ttf');
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: Roboto, Arial, serif;
+  /*overflow: hidden;*/
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+section#title h1{
+  margin-top: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  font-family: 'Saiyan-Sans', Arial, serif;
+}
+
+section#title h1 span{
+  font-family: 'Saiyan-Sans', Arial, serif;
+  font-size: 5rem;
+  display: flex;
+  height: 85px;
+  margin: 0 auto;
+}
+
+section#title h1 .red{
+  color: red;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #000;
+}
+
+section#title h1 .yellow{
+  color: yellow;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #000;
+}
+
+
+main {
+  display: flex;
+  height: 100vh;
+}
+
+main section#banner{
+  width: 100%;
+  background-color: yellow;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+main section#banner #img_bg{
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 50em gold, 0 0 1em red;
+}
+
+section#banner .gradiente {
+  width: 50%;
+  height: 100%;
+  background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+main section#dados{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
+  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+main section#dados #imagem {
+  width: 40%;
+  padding: 2rem;
+  transition: all .2s ease-in-out;
+}
+
+section#dados #imagem:hover {
+  transform: scale(1.2);
+}
+
+main section#dados #infos {
+  margin-bottom: 1rem;
+}
+
+section#dados button{
+  border: solid 2px #a13e10;
+  padding: 1rem;
+  margin-bottom: 50rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0);
+  color: #a13e10;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+section#dados button:hover {
+  transform: scale(1.2);
+  background-color: rgba(86, 132, 150, 0);
+}
+
+
+
+footer {
+  margin-top: auto;
+  background-color: black;
+  padding: 1.5rem;
+  text-align: center;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+footer a{
+  text-decoration: none;
+  color: #fff;
+}
+
+footer a:hover{
+  color: rgb(255, 247, 175);
+}
+
+/*Responsividade */
+
+
+@media (max-width:890px) {
+  *{
+    overflow: auto;
+  }
+
+main {
+  display: initial;
+}
+
+section#title h1{
+  margin-top: 0vh;
+  display: flex;
+  flex-direction: row;
+}
+
+main section#banner #img_bg{
+  display: none;
+}
+
+main section#dados #imagem{
+width: 100%;
+}
+
+section#banner .gradiente {
+  display: none;
+}
+}
