@@ -12,15 +12,12 @@ Usando as tecnologias: HTML, CSS, JAVASCRIPT e NodeJS Express.
 
 ![](Projeto 1 - Jogo do Humor/projeto_01.gif)
 
-[Meu código]([(https://github.com/Thais-Mont/projetos-blue-edtech-mod02/tree/master/Projeto%201%20-%20Jogo%20do%20Humor)])
+[Meu código](https://github.com/Thais-Mont/projetos-blue-edtech-mod02)
 
 
 Aprendizados:
 
-* *pseudo-elements **:before** and **:after***
-
-* *propriedade CSS **transition***
-
-* ***seletores***
+* *Uso de ***ARRAY'S*** e estrutura de repetição com ***FOR*** para acesso
+e troca de imagens *.
 
 --- 
