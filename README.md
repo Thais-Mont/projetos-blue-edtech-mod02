@@ -10,9 +10,9 @@ Usando as tecnologias: HTML, CSS, JAVASCRIPT e NodeJS Express.
 
 - **Projeto 01 - Jogo do Humor - Dragon Ball** <a name="id01"></a>
 
-![](dia_1/dia1.gif)
+![](Projeto 1 - Jogo do Humor/projeto_01.gif)
 
-[Meu código]([https://github.com/bfloriano/Desafio30diasCSS/tree/master/dia_1](https://github.com/Thais-Mont/projetos-blue-edtech-mod02/tree/master/Projeto%201%20-%20Jogo%20do%20Humor))
+[Meu código]([(https://github.com/Thais-Mont/projetos-blue-edtech-mod02/tree/master/Projeto%201%20-%20Jogo%20do%20Humor)])
 
 
 Aprendizados:
