@@ -13,8 +13,6 @@ Usando as tecnologias: HTML, CSS, JAVASCRIPT e NodeJS Express.
 ![](https://github.com/Thais-Mont/projetos-blue-edtech-mod02/blob/beffd24ad8e65ec837b306dc350371e83bf3ba4f/Projeto%201%20-%20Jogo%20do%20Humor/projeto_01.gif)
 
 
-[Meu código](https://github.com/Thais-Mont/projetos-blue-edtech-mod02/tree/master/Projeto%201%20-%20Jogo%20do%20Humor)
-
 
 Aprendizados:
 
