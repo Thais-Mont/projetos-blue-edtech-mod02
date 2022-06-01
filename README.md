@@ -5,6 +5,7 @@ Usando as tecnologias: HTML, CSS, JAVASCRIPT e NodeJS Express.
 
 ---
 * [Projeto 01 - Jogo do Humor](#id01)
+* [Projeto 02 - Pokedéx](#id02)
 
 --- 
 
@@ -20,3 +21,14 @@ Aprendizados:
 e troca de imagens *.
 
 --- 
+
+
+- **Projeto 02 - Pokedéx** <a name="id02"></a>
+
+![](https://github.com/Thais-Mont/projetos-blue-edtech-mod02/blob/master/Projeto%202%20-%20Pokedex/imagens/tela-principal.PNG)
+
+
+Aprendizados:
+
+* *Uso de ***NODE EXPRESS*** e Deploy no HEROKU*. 
+
