@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Righteous&family=Sarala:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(../img/bg-pokedex.jpg);
+  background-color: -rgba(95, 255, 169, 0.8);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+nav {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  background-color: #dc0a2d2d;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 0.6rem 1rem 0.6rem 0.6rem;
+  transition: all 0.5s ease-in-out;
+}
+
+nav ul li:hover {
+  transform: scale(1.2);
+}
+
+nav img {
+  width: 3rem;
+}
+
+nav h1 {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/* Página Principal*/
+#home {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.cards {
+  background-color: rgba(112, 243, 212, 0.83);
+  border-radius: 41px;
+  width: 325px;
+  height: 410px;
+}
+
+.new-card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(112, 243, 212, 0.83);
+  border-radius: 41px;
+  width: 325px;
+  height: 410px;
+}
+
+#card {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0.7rem;
+}
+
+#card-pokebola {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+#card-pokebola-detalhes {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.red-card {
+  display: flex;
+}
+
+#pokebola {
+  width: 80%;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.5s;
+}
+
+#pokebola:hover {
+  transform: scale(1.2);
+}
+
+#pokemon {
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.5s;
+}
+
+#pokemon:hover {
+  transform: scale(1.2);
+}
+
+#num {
+  font-size: 24px;
+  font-weight: 700;
+  left: 30px;
+  top: 18px;
+}
+
+#name {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 0.7rem;
+}
+
+span#tipo {
+  background-color: #d9d9d9;
+  border-radius: 27px;
+  width: 90px;
+  height: 30px;
+  font-size: 15px;
+  padding: 8px;
+}
+
+/* Página de Detalhes*/
+
+#details {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+#pokedex {
+  display: flex;
+  margin: 0 auto;
+  width: 850px;
+  height: 638px;
+  background-image: url(../img/pokedex.png);
+  background-repeat: no-repeat;
+}
+
+#card-pokedex {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin-left: 56px;
+  padding: 106px 32px 32px 0;
+}
+
+#infos {
+  width: 300px;
+  margin-left: 120px;
+  margin-top: 195px;
+  font-size: 18px;
+}
+
+#lista-pokemons {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 285x;
+  height: 638px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+#menu {
+  position: absolute;
+  margin-left: 595px;
+  margin-top: 545px;
+  margin-right: 20px;
+}
+
+#description-detalhes {
+  margin-top: 30px;
+  font-weight: normal !important;
+  text-align: center;
+  font-style: italic !important;
+  font-size: 18px;
+}
+
+button#btnDelete {
+  margin-top: 28px;
+  width: 100%;
+  padding: 3px 14px 4px 14px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-weight: 700;
+  font-size: 15px;
+  box-shadow: -4px 4px 3px 1px rgba(0, 0, 0, 0.49),
+    inset 8px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+button#btnDelete:hover {
+  background-color: red;
+  transform: scale(1.2);
+}
+
+button#btnMenu {
+  margin-top: 28px;
+  width: 100%;
+  padding: 3px 14px 4px 14px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-weight: 700;
+  font-size: 15px;
+  box-shadow: -4px 4px 3px 1px rgba(0, 0, 0, 0.49),
+    inset 8px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+button#btnMenu:hover {
+  transform: scale(1.2);
+}
+
+#cadastro-pokemon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 250px;
+  height: 60px;
+  background: rgba(217, 217, 217, 0.63);
+  border-radius: 31px 0px 0px 31px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+#cadastro-pokemon:hover {
+  transform: scale(1.05);
+}
+
+.card-cadastro {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: black;
+}
+
+#icon-pokemon {
+  width: 20%;
+}
+
+/* Página de Cadastro*/
+
+form#infos-cadastro {
+  width: 300px;
+  margin-left: 154px;
+  margin-right: 45px;
+  margin-top: 170px;
+  font-size: 15px;
+}
+
+.label-form {
+  margin-top: 10px;
+}
+
+#description-cadastro {
+  margin-top: 5px;
+  font-weight: normal !important;
+  text-align: center;
+  font-style: italic !important;
+  font-size: 15px;
+}
+
+#descricao {
+  height: 28px;
+  width: 295px;
+  font-weight: normal;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Mensagem de confirmação */
+
+#mensagem {
+  padding: 1rem;
+  background-color: rgba(197, 255, 214, 0.726);
+  color: #004d04;
+  position: fixed;
+  top: 3rem;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+span#close {
+  font-size: 2rem;
+  cursor: pointer;
+  color: rgb(255, 0, 0);
+  transition: 0.3s;
+}
+
+span#close:hover {
+  transform: scale(1.5);
+}
+
+/*Footer*/
+
+footer {
+  background: rgba(95, 255, 169, 0.4);
+  font-weight: 500;
+  font-size: 18px;
+  color: #474747;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+/*Responsividade*/
+
+@media (max-width: 869px) {
+  #img-logo {
+    width: 100%;
+  }
+
+  #pokedex {
+    width: 350px;
+    height: 638px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  #card-pokebola-detalhes {
+    display: none;
+  }
+
+  form#infos-cadastro {
+    margin-left: 44px;
+    margin-right: 45px;
+    margin-top: 152px;
+  }
+
+  .label-form {
+    margin-top: 7px;
+  }
+
+  #lista-pokemons {
+    display: none;
+  }
+
+  #description-detalhes {
+    margin-top: 70px;
+    font-size: 13px;
+    margin-left: -158px;
+  }
+
+  #infos {
+    margin-left: 12px;
+    margin-top: 212px;
+    font-size: 15px;
+  }
+
+  #menu {
+    margin-left: 123px;
+  }
+
+  button#btnMenu {
+    margin-top: 15px;
+  }
+}

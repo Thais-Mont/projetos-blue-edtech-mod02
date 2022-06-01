@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Pokedex - Detalhes</title>
+  </head>
+  <body>
+    <header>
+      <img id="img-logo" src="img/logo-pokedex.png" alt="logo-pokedex" />
+    </header>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="/">
+            <h1>Pokedéx</h1>
+          </a>
+        </li>
+        <li><a href="/cadastro">Cadastro</a></li>
+      </ul>
+    </nav>
+
+    <main id="details">
+      <section id="lista-pokemons">
+        <% pokedex.forEach((pokemon) => { %>
+        <div id="cadastro-pokemon">
+          <a href="/detalhes?id=<%= pokemon.id %>" class="card-cadastro">
+            <img id="icon-pokemon" src="<%= pokemon.imagem %>" alt="" />
+            <p id="name"><%= pokemon.nome %></p>
+          </a>
+        </div>
+        <% }) %>
+      </section>
+
+      <section id="pokedex">
+
+        <div id="card-pokedex">
+          <a id="apagar" href="/delete/<%= pokemon.id %>">
+            <button id="btnDelete">Deletar <%= pokemon.nome %></button>
+          </a>
+          <p id="num">0<%= pokemon.id %></p>
+          <img id="pokemon" src="<%= pokemon.imagem %>" alt="img-pokemon" />
+          <p id="name"><%= pokemon.nome %></p>
+        </div>
+
+        <div id="infos">
+          <ul>
+            <li>Tipo: <%= pokemon.tipo %></li>
+            <li>Altura:  <%= pokemon.altura %> m</li>
+            <li>Peso: <%= pokemon.peso %> kg</li>
+            <li>Habilidade:  <%= pokemon.habilidade %></li>
+            <li>Categoria:  <%= pokemon.categoria %></li>
+          </ul>
+          <p id="description-detalhes">
+            <%= pokemon.descricao %>
+          </p>
+        </div>
+        <div id="menu">
+          <a href="/">
+            <button id="btnMenu">Voltar ao Menu</button>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a href="https://github.com/Thais-Mont" target="_blank">Thaís Monteiro -2022 &copy</a>
+      <p>Dados retirados de <a target="_blank" href="https://www.pokemon.com/br/pokedex/">Pokédex</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

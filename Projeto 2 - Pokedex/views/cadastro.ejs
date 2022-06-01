@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Pokedex - Cadastro</title>
+  </head>
+  <body>
+
+    <header>
+      <img id="img-logo" src="img/logo-pokedex.png" alt="logo-pokedex" />
+    </header>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="/">
+            <h1>Pokedéx</h1>
+          </a>
+        </li>
+        <li><a href="/cadastro">Cadastro</a></li>
+      </ul>
+    </nav>
+
+    <main id="details">
+
+      <section id="pokedex">
+        <div id="card-pokebola-detalhes">
+          <div id="card">
+            <img id="pokebola" src="img/pokebola.png" alt="img-pokebola" />
+          <p id="name">Capturar novo pokemon</p>
+          </div>
+        </div>
+
+        <form id="infos-cadastro" action="/create" method="POST">
+
+          <div class="label-form">
+            <label for="imagem">Link da Imagem: </label>
+            <input type="text" name="imagem" id="imagem" required />
+          </div>
+
+          <div>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" required />
+          </div>
+
+          <div class="label-form">
+            <label for="tipo">Tipo: </label>
+            <select name="tipo" id="tipo">
+              <option value="Inseto">Inseto</option>
+              <option value="Sombrio">Sombrio</option>
+              <option value="Dragão">Dragão</option>
+              <option value="Elétrico">Elétrico</option>
+              <option value="Fada">Fada</option>
+              <option value="Lutador">Lutador</option>
+              <option value="Fogo">Fogo</option>
+              <option value="Voador">Voador</option>
+              <option value="Fantasma">Fantasma</option>
+              <option value="Planta">Planta</option>
+              <option value="Terrestre">Terrestre</option>
+              <option value="Gelo">Gelo</option>
+              <option value="Normal">Normal</option>
+              <option value="Venenoso">Venenoso</option>
+              <option value="Psíquico">Psíquico</option>
+              <option value="Pedra">Pedra</option>
+              <option value="Aço">Aço</option>
+              <option value="Água">Água</option>
+            </select>
+          </div>
+
+          <div class="label-form">
+            <label for="altura">Altura: </label>
+            <input type="number" step="any" name="altura" id="altura" required />
+          </div>
+
+          <div class="label-form">
+            <label for="peso">Peso: </label>
+            <input type="number" step="any" name="peso" id="peso" required />
+          </div>
+
+          
+          <div class="label-form">
+            <label for="categoria">Categoria: </label>
+            <input type="text" name="categoria" id="categoria" required />
+          </div>
+
+          
+          <div id="description-cadastro">
+            <label for="descricao">Descrição: </label>
+            <textarea name="descricao" id="descricao" required></textarea>
+          </div>
+
+          <div id="btnCadastro">
+            <button id="btnMenu" type="submit">Cadastrar</button>
+          </div>
+        </form>
+      </section>
+
+    </main>
+
+    <footer>
+      <a href="https://github.com/Thais-Mont" target="_blank">Thaís Monteiro -2022 &copy</a>
+      <p>Dados retirados de <a target="_blank" href="https://www.pokemon.com/br/pokedex/">Pokédex</a></p>
+    </footer>
+
+  </body>
+</html>

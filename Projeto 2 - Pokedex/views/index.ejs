@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Pokedéx</title>
+  </head>
+
+  <body>
+    <header>
+      <img id="img-logo" src="img/logo-pokedex.png" alt="logo-pokedex" />
+    </header>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="/">
+            <h1>Pokedéx</h1>
+          </a>
+        </li>
+        <li><a href="/cadastro">Cadastro</a></li>
+      </ul>
+    </nav>
+
+    
+    <% if(mensagem != ""){ %>
+      <section id="mensagem">
+          <p> <%=mensagem %> </p> <span id="close">&times;</span>
+      </section>
+      <% } %>
+
+    <main id="home">
+    <% pokedex.forEach((pokemon) => { %>
+      <section class="cards">
+        <div id="card">
+          <p id="num">0<%= pokemon.id %></p>
+          <a href="/detalhes?id=<%= pokemon.id %>" class="red-card">
+            <img id="pokemon" src= <%= pokemon.imagem %> alt="img-pokemon" />
+          </a>
+          <p id="name"><%= pokemon.nome %></p>
+          <div>
+            <span id="tipo"><%= pokemon.tipo %></span>
+          </div>
+        </div>
+      </section>
+    <% }) %>
+
+      <section class="new-card">
+        <div id="card-pokebola">
+          <a href="/cadastro" class="red-card">
+            <img id="pokebola" src="img/pokebola.png" alt="img-pokebola" />
+          </a>
+        <p id="name">Capturar novo pokemon</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a href="https://github.com/Thais-Mont" target="_blank">Thaís Monteiro -2022 &copy</a>
+      <p>Dados retirados de <a target="_blank" href="https://www.pokemon.com/br/pokedex/">Pokédex</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
